@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Haskell</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+    <header>
+        <img id="haskell_logo" src="assets/img/haskell-logo.svg">
+        <nav id="navbar">
+            <a class="navlink" href="https://www.haskell.org/downloads">Downloads</a>
+            <a class="navlink" href="https://www.haskell.org/community">Community</a>
+            <a class="navlink" href="https://www.haskell.org/documentation">Documentation</a>
+            <a class="navlink" href="https://www.haskell.org/news">News</a>
+        </nav>
+    </header>
+    <div id="pattern">
+        <div id="intro_container">
+            <div id="intro_text">An advanced, purely functional programming language</div>
+            <div id="description">Declarative, statically typed code.</div>
+            <pre id="code">primes = filterPrime [2..]
+  where filterPrime (p:xs) =
+            p : filterPrime [x | x <- xs, x `mod` p /= 0]
+        </pre>
+        </div>
+    </div>
+    <div id="feature_title">Features</div>
+    <div id="features">
+        <div class="feature" id="f1">
+            <div class="feature_title">
+                Statically typed
+            </div>
+            <div class="feature_content">
+                Every expression in Haskell has a type which is determined at compile time. All the types composed together by function application have to match up. If they don't, the program will be rejected by the compiler. Types become not only a form of guarantee, but a language for expressing the construction of programs.
+            </div>
+        </div>
+        <div class="feature" id="f2">
+            <div class="feature_title">
+                Purely functional
+            </div>
+            <div class="feature_content">
+                Every function in Haskell is a function in the mathematical sense (i.e., "pure"). Even side-effecting IO operations are but a description of what to do, produced by pure code. There are no statements or instructions, only expressions which cannot mutate variables (local or global) nor access state like time or random numbers.
+            </div>
+        </div>
+        <div class="feature" id="f3">
+            <div class="feature_title">
+                Type inference
+            </div>
+            <div class="feature_content">
+                You don't have to explicitly write out every type in a Haskell program. Types will be inferred by unifying every type bidirectionally. However, you can write out types if you choose, or ask the compiler to write them for you for handy documentation.
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div class="feature" id="f4">
+            <div class="feature_title">
+                Concurrent
+            </div>
+            <div class="feature_content">
+                Haskell lends itself well to concurrent programming due to its explicit handling of effects. Its flagship compiler, GHC, comes with a high-performance parallel garbage collector and light-weight concurrency library containing a number of useful concurrency primitives and abstractions.
+            </div>
+        </div>
+        <div class="feature" id="f5">
+            <div class="feature_title">
+                Lazy
+            </div>
+            <div class="feature_content">
+                Functions don't evaluate their arguments. This means that programs can compose together very well, with the ability to write control constructs (such as if/else) just by writing normal functions. The purity of Haskell code makes it easy to fuse chains of functions together, allowing for performance benefits.
+            </div>
+        </div>
+        <div class="feature" id="f6">
+            <div class="feature_title">
+                Packages
+            </div>
+            <div class="feature_content">
+                Open source contribution to Haskell is very active with a wide range of packages available on the public package servers.
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_container">
+            <div id="footerl">© 2014–2017 haskell.org</div>
+            <div id="footerc">Got changes to contribute to the site? Fork or comment on Github</div>
+            <div id="footerr">Proudly hosted by rackspace</div>
+        </div>
+    </footer>
+</body>
+</html>

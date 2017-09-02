@@ -1,0 +1,140 @@
+body {
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+}
+
+#haskell_logo {
+    width: 220px;
+    height: 88px;
+    float: left;
+}
+
+#navbar {
+    padding: 28px 20px 22px;
+    float: right;
+}
+
+.navlink {
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.navlink:link, .navlink:visited {
+    color: #888888;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: #555555;
+    text-decoration: none;
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#pattern {
+    height: 250px;
+    padding: 20px 0;
+    margin: 0 -10px;
+    background: #0000ff url("../img/pattern.png") no-repeat;
+}
+
+#intro_text {
+    color: #eeeeee;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+#description {
+    color: #cccccc;
+    font-size: 20px;
+    text-align: center;
+}
+
+#code {
+    width: 550px;
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+#intro_container {
+    width: 1200px;
+    margin: auto;
+}
+
+#feature_title {
+    width: 1200px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 10px auto;
+}
+
+#features {
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+.feature {
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin: 10px;
+}
+
+#clear {
+    clear: both;
+}
+
+.feature_title {
+    width: inherit;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+}
+
+.feature_content {
+    width: inherit;
+    line-height: 30px;
+    font-size: 15px;
+    color: #555555;
+}
+
+#footerl {
+    float: left;
+}
+
+#footerc {
+    float: left;
+    position: relative;
+    left: 15%;
+}
+
+#footerr {
+    float: right;
+}
+
+#footer_container {
+    width: 1200px;
+    height: 20px;
+    color: #bbbbbb;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    height: 20px;
+    margin: 0 -10px;
+    padding: 50px;
+    background-color: #333333;
+}

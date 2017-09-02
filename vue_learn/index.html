@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="assets/js/vue.js"></script>
+    <title>vue</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div id="app">
+        <div id="header">
+            <span>通讯录</span>
+            <button v-on:click="adduser">[+]</button>
+        </div>
+        <div id="list">
+            <ol>
+                <li v-for="(user,index) in contactusers"
+                    v-bind:key="user.id"
+                    v-on:click="selectuser(user,index)"
+                    v-on:mouseover="mouseover(user,index)"
+                    v-on:mouseout="mouseout(user,index)"
+                    v-bind:style="{ 'background-color': user.backgroundColor }">
+                    <div class="name">
+                        <span>{{ user.name }}</span>
+                    </div>
+                    <button v-on:click.stop="deleteuser(user,index)">[-]</button>
+                </li>
+            </ol>
+        </div>
+        <div id="detail">
+            <div v-if="curuser != null">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">手机：</label>
+                            <input type="text" id="username" placeholder="姓名"
+                                   v-model:value="curuser.name" v-on:change="modifyinfo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mobile">手机：</label>
+                            <input type="text" id="mobile" placeholder="手机"
+                                   v-model:value="curuser.mobile" v-on:change="modifyinfo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">邮箱：</label>
+                            <input type="text" id="email" placeholder="邮箱"
+                                   v-model:value="curuser.email" v-on:change="modifyinfo">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

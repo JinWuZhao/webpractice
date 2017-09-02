@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>编程语言列表</title>
+    <style>
+        #title {
+            text-align: center;
+        }
+        table {
+            background-color: black;
+            color: beige;
+        }
+        a {
+            color: cornflowerblue;
+        }
+        th {
+            background-color: darkblue;
+            color: red;
+        }
+        td.check {
+            background-color: darkblue;
+        }
+        td:not(.code) {
+            text-align: center;
+        }
+        button {
+            background-color: greenyellow;
+        }
+        button:hover {
+            background-color: blue;
+        }
+        td.name {
+            color: greenyellow;
+        }
+        a:hover {
+            background-color: red;
+        }
+        td.name:hover {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">编程语言列表</h1>
+    </div>
+    <div>
+        <table align="center" border="1">
+            <tr>
+                <th>选择</th>
+                <th>名称</th>
+                <th>示例</th>
+                <th>网站</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">Scheme</td>
+                <td class="code"><code>
+                    (<span style="color: greenyellow">display</span> <span style="color: yellow">"hello world!"</span>)
+                </code></td>
+                <td><a href="http://scheme.com/">scheme.com</a></td>
+                <td><button>❌</button></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">Haskell</td>
+                <td class="code"><code>
+                    <span style="color: greenyellow">main</span> :: <span style="color: red">IO ()</span><br>
+                    <span style="color: greenyellow">main</span> = <span style="color: chocolate">do</span><br>
+                    &emsp;<span style="color: greenyellow">putStrLn</span> <span style="color: yellow">"hello world!"</span><br>
+                </code></td>
+                <td><a href="https://www.haskell.org/">haskell.org</a></td>
+                <td><button>❌</button></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">Erlang</td>
+                <td class="code"><code>
+                    <span style="color: red">io</span>:<span style="color: greenyellow">fwrite</span>(<span style="color: yellow">"hello, world\n"</span>).
+                </code></td>
+                <td><a href="https://www.erlang.org/">erlang.org</a></td>
+                <td><button>❌</button></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">Scala</td>
+                <td class="code"><code>
+                    <span style="color: chocolate">object</span> <span style="color: red">HelloWorld</span> {<br>
+                    &emsp;<span style="color: chocolate">def</span> <span style="color: greenyellow">main</span>(<span style="color: blue">args</span>: <span style="color: red">Array[String]</span>): <span style="color: red">Unit</span> = {<br>
+                    &emsp;&emsp;<span style="color: greenyellow">println</span>(<span style="color: yellow">"Hello, world!"</span>)<br>
+                    &emsp;}<br>
+                    }
+                </code></td>
+                <td><a href="https://www.scala-lang.org/">scala-lang.org</a></td>
+                <td><button>❌</button></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">Ocaml</td>
+                <td class="code"><code>
+                    <span style="color: chocolate">let</span> <span style="color: red">()</span> = <span style="color: greenyellow">print_endline</span> <span style="color: yellow">"Hello, World!"</span>
+                </code></td>
+                <td><a href="https://ocaml.org/">ocaml.org</a></td>
+                <td><button>❌</button></td>
+            </tr>
+            <tr>
+                <td class="check"><input type="checkbox"></td>
+                <td class="name">F#</td>
+                <td class="code"><code>
+                    <span style="color: greenyellow">printf</span> <span style="color: yellow">"Hello World!"</span>
+                </code></td>
+                <td><a href="http://fsharp.org/">fsharp.org</a></td>
+                <td><button>❌</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
